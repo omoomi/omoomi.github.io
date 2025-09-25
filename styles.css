@@ -182,7 +182,7 @@ p {
 
 /* Problem Section */
 .problem {
-    background-color: #D9D9D9;
+    background-color: #F5BF5F;
     padding: 60px 0;
 }
 
@@ -212,7 +212,7 @@ p {
     position: absolute;
     left: 0;
     top: 0;
-    color: #F5BF5F;
+    color: #000000;
     font-weight: bold;
 }
 
