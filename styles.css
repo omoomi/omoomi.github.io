@@ -103,7 +103,7 @@ p {
 }
 
 .subheading {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     color: #F5BF5F;
     font-weight: 500;
     margin-bottom: 1rem;
@@ -247,7 +247,7 @@ p {
 /* Possibilities Section */
 .possibilities {
     padding: 60px 0;
-    background-color: #FDFAF6;
+    background-color: #D9D9D9;
 }
 
 .possibilities h2 {
