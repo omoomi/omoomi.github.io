@@ -102,6 +102,10 @@ p {
     color: #FDFAF6;
 }
 
+.hero h2 {
+    color: #FDFAF6;
+}
+
 .subheading {
     font-size: 1.5rem;
     color: #F5BF5F;
@@ -236,7 +240,8 @@ p {
 }
 
 .stack-item {
-    flex: 1 1 300px;
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
     background-color: #FDFAF6;
     border: 1px solid #D9D9D9;
     border-radius: 8px;
@@ -303,10 +308,29 @@ p {
     text-align: center;
 }
 
+/* Privacy First Section */
+.privacy-first {
+    background-color: #FDFAF6;
+}
+
+.privacy-first h1 {
+    text-align: center;
+}
+
+/* Built for Families Section */
+.built-for-families {
+    background-color: #D9D9D9;
+}
+
+/* Our Story Section */
+.our-story {
+    background-color: #F5BF5F;
+}
+
 /* Final CTA Section */
 .final-cta {
     padding: 60px 0;
-    background-color: #F5BF5F;
+    background-color: #D9D9D9;
     color: #000000;
     text-align: center;
 }
@@ -321,6 +345,11 @@ p {
 
 .final-cta .btn {
     border: none;
+    background-color: #F5BF5F;
+}
+
+.final-cta .btn:hover {
+    background-color: #e2ab50;
 }
 
 /* Footer */
