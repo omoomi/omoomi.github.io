@@ -186,7 +186,7 @@ p {
 
 /* Problem Section */
 .problem {
-    background-color: #F5BF5F;
+    background-color: #FDFAF6;
     padding: 60px 0;
 }
 
@@ -240,9 +240,10 @@ p {
 }
 
 .stack-item {
-    flex: 1 1 calc(50% - 1rem);
-    max-width: calc(50% - 1rem);
-    background-color: #FDFAF6;
+    flex: 1 1 calc(25% - 1.5rem);
+    max-width: calc(25% - 1.5rem);
+    min-width: 200px;
+    background-color: #FFFFFF;
     border: 1px solid #D9D9D9;
     border-radius: 8px;
     padding: 20px;
@@ -308,9 +309,20 @@ p {
     text-align: center;
 }
 
+/* Product Introduction Section */
+.product-intro {
+    background-color: #F5BF5F;
+    padding: 60px 0;
+}
+
+.product-intro h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 /* Privacy First Section */
 .privacy-first {
-    background-color: #FDFAF6;
+    background-color: #D9D9D9;
 }
 
 .privacy-first h1 {
@@ -319,18 +331,18 @@ p {
 
 /* Built for Families Section */
 .built-for-families {
-    background-color: #D9D9D9;
+    background-color: #F5BF5F;
 }
 
 /* Our Story Section */
 .our-story {
-    background-color: #F5BF5F;
+    background-color: #D9D9D9;
 }
 
 /* Final CTA Section */
 .final-cta {
     padding: 60px 0;
-    background-color: #D9D9D9;
+    background-color: #FDFAF6;
     color: #000000;
     text-align: center;
 }
@@ -373,5 +385,21 @@ p {
     .industry-item,
     .why-item {
         flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .stack-grid,
+    .feature-grid,
+    .industry-grid,
+    .why-grid {
+        gap: 1.5rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .logo {
+        width: 80%;
     }
 }
