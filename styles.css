@@ -153,6 +153,14 @@ p {
     margin-bottom: 2rem;
 }
 
+.section-intro-blk {
+    font-size: 1.15rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #000000;
+    font-weight: bold;
+}
+
 .feature-grid {
     display: flex;
     flex-wrap: wrap;
@@ -313,11 +321,20 @@ p {
 .product-intro {
     background-color: #F5BF5F;
     padding: 60px 0;
+    text-align: center;
 }
 
 .product-intro h2 {
     text-align: center;
     margin-bottom: 1rem;
+}
+
+.product-intro .btn {
+    background-color: #FDFAF6;
+}
+
+.product-intro .btn:hover {
+    background-color: #EDEAE4;
 }
 
 /* Privacy First Section */
