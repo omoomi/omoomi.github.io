@@ -1,0 +1,405 @@
+:root {
+  --primary: #F4B942;
+  --secondary: #FFF7EB;
+  --neutral: #E4E4E0;
+  --accent: #333333;
+  --support: #E78A54;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: var(--accent);
+  background-color: var(--secondary);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: var(--secondary);
+  border-bottom: 1px solid var(--neutral);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.02);
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+nav a.active {
+  color: var(--primary);
+  position: relative;
+}
+
+nav a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary);
+  border-radius: 1px;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: all 0.3s ease, transform 0.3s ease;
+  transform: translateY(0);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--accent);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.btn-cream {
+  background-color: var(--secondary);
+  color: var(--accent);
+  border: 2px solid var(--neutral);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent);
+  color: var(--secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(244, 185, 66, 0.3);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary);
+  color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(244, 185, 66, 0.3);
+}
+
+.btn-cream:hover {
+  background-color: var(--neutral);
+  color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero */
+.hero {
+  padding: 4rem 0;
+  background-color: var(--secondary);
+}
+
+.hero-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hero-content {
+  flex: 1 1 50%;
+}
+
+.hero-content h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+.hero-image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Benefits */
+.benefits {
+  background-color: var(--neutral);
+  padding: 3rem 0;
+}
+
+.benefits h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.benefit-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+}
+
+.benefit-cards .card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.benefit-cards .card i {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.benefit-cards .card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+}
+
+.benefit-cards .card p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* How it works */
+.how-it-works {
+  padding: 3rem 0;
+  background-color: var(--secondary);
+}
+
+.how-it-works h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.step {
+  text-align: center;
+  padding: 1rem;
+}
+
+.step-number {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary);
+  color: var(--accent);
+  border-radius: 50%;
+  line-height: 40px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.step h4 {
+  margin: 0.5rem 0 0.25rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* CTA */
+.cta {
+  padding: 3rem 0;
+  background-color: var(--primary);
+  color: var(--accent);
+  text-align: center;
+}
+
+.cta h2 {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cta p {
+  margin-top: 0.5rem;
+}
+
+.waitlist-form {
+  margin: 1rem auto;
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.waitlist-form input {
+  flex: 1 1 200px;
+  padding: 0.5rem;
+  border: 1px solid var(--neutral);
+  border-radius: 0.375rem;
+  font-size: 1rem;
+}
+
+.waitlist-form button {
+  flex: 1 1 100px;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  background-color: var(--accent);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.waitlist-form button:hover {
+  background-color: var(--support);
+}
+
+/* Footer */
+footer {
+  background-color: var(--neutral);
+  padding: 2rem 0;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.footer-brand {
+  flex: 1 1 50%;
+}
+
+.footer-brand p {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.footer-links {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-links a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .nav {
+    position: relative;
+  }
+
+  .logo {
+    width: 100px;
+    height: 33px;
+  }
+
+  .nav ul li {
+    margin-left: 0.5rem;
+  }
+
+  .mobile-menu-toggle {
+    display: none;
+    /* Hidden for now, can be implemented later */
+  }
+
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    max-width: 300px;
+    margin-top: 2rem;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-brand,
+  .footer-links {
+    text-align: center;
+  }
+}
