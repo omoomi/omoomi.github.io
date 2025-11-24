@@ -45,58 +45,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <style>
-    .privacy-section {
-      padding: 3rem 0;
-    }
-
-    .privacy-section h2 {
-      font-family: 'Poppins', sans-serif;
-      margin-bottom: 1rem;
-    }
-
-    .privacy-section p {
-      max-width: 800px;
-    }
-
-    .privacy-grid {
-      display: grid;
-      gap: 1rem;
-      margin-top: 1rem;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
-    .privacy-item {
-      background: white;
-      padding: 1rem;
-      border-radius: 0.5rem;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    }
-
-    .privacy-item h4 {
-      margin-top: 0;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1rem;
-    }
-
-    th,
-    td {
-      border: 1px solid var(--neutral);
-      padding: 0.5rem;
-      text-align: left;
-    }
-
-    th {
-      background-color: var(--neutral);
-      font-family: 'Poppins', sans-serif;
-    }
-  </style>
-</head>
+  </head>
 
 <body>
   <header>
@@ -119,83 +68,125 @@
   <section class="hero" style="background-color: var(--neutral);">
     <div class="container hero-inner">
       <div class="hero-content">
-        <h1>Your child's privacy isn’t fine print. It’s our foundation!</h1>
-        <p>We believe that what happens at home should stay at home. omoomi processes information locally and gives you
-          complete control over your data.</p>
+        <h1>Privacy & Security Built for Families</h1>
+        <p>Discover how omoomi protects your child's data with complete transparency and on-device processing that gives you full control and peace of mind.</p>
+        <a href="https://tinyurl.com/omoomiPioneer" class="btn btn-cream" target="_blank">Join Pioneer Program</a>
       </div>
     </div>
   </section>
 
-  <section class="privacy-section" style="background-color: var(--secondary);">
+  <section class="benefits" style="background-color: var(--secondary);">
     <div class="container">
       <h2>What We Collect & Why</h2>
-      <p>We collect only the data necessary to operate omoomi. Here’s a transparent breakdown of the information we
-        handle and why it’s required.</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Data</th>
-            <th>Purpose</th>
-            <th>Retention</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Device Usage Stats</td>
-            <td>To personalise content recommendations based on play patterns.</td>
-            <td>Stored locally; deletable by parents</td>
-          </tr>
-          <tr>
-            <td>Parent Email</td>
-            <td>To send updates and resource guides.</td>
-            <td>Stored securely until you unsubscribe</td>
-          </tr>
-        </tbody>
-      </table>
+      <p>We collect only the data necessary to operate omoomi. Here's a transparent breakdown of the information we
+        handle and why it's required.</p>
+      <div class="benefit-cards">
+        <div class="card">
+          <i class="fas fa-chart-line"></i>
+          <h3>Device Usage Stats</h3>
+          <p>To personalize content recommendations based on play patterns. Stored locally and deletable by parents at any time.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-envelope"></i>
+          <h3>Parent Email</h3>
+          <p>To send updates and resource guides. Stored securely until you unsubscribe from our communications.</p>
+        </div>
+      </div>
+      <p style="margin-top:1rem;">We believe in radical transparency. If it's not essential for Eddie to function, we don't collect it. Simple as that.</p>
     </div>
   </section>
 
-  <section class="privacy-section">
+  <section class="benefits">
     <div class="container">
       <h2>Control & Consent</h2>
       <p>We give parents full control over data through an intuitive dashboard. From there you can view usage, download
         records or delete everything with one click.</p>
-      <div class="privacy-grid">
-        <div class="privacy-item">
-          <h4>Minimal Data Collection</h4>
-          <p>We collect the bare minimum needed to make play meaningful. If it’s not essential, we don’t ask for it.</p>
+      <div class="benefit-cards">
+        <div class="card">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Minimal Data Collection</h3>
+          <p>We collect the bare minimum needed to make play meaningful. If it's not essential, we don't ask for it.</p>
         </div>
-        <div class="privacy-item">
-          <h4>Easy Deletion</h4>
+        <div class="card">
+          <i class="fas fa-trash-alt"></i>
+          <h3>Easy Deletion</h3>
           <p>Delete your data at any time without contacting support. Your choices are immediate and respected.</p>
         </div>
-        <div class="privacy-item">
-          <h4>Clear Consent</h4>
+        <div class="card">
+          <i class="fas fa-handshake"></i>
+          <h3>Clear Consent</h3>
           <p>We never collect sensitive information without explicit, informed parental consent.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="privacy-section" style="background-color: var(--secondary);">
+  <section class="benefits" style="background-color: var(--secondary);">
     <div class="container">
       <h2>Compliance & Transparency</h2>
-      <p>omoomi is designed to meet COPPA and GDPR requirements for children’s privacy. We communicate changes directly
+      <p>omoomi is designed to meet COPPA and GDPR requirements for children's privacy. We communicate changes directly
         and in plain language.</p>
-      <ul>
-        <li>COPPA/GDPR compliant infrastructure and policies.</li>
-        <li>No hidden data collection or sharing with third parties.</li>
-        <li>Regular updates communicated to parents directly.</li>
-      </ul>
+      <div class="benefit-cards">
+        <div class="card">
+          <i class="fas fa-certificate"></i>
+          <h3>COPPA/GDPR Compliant</h3>
+          <p>Our infrastructure and policies meet the highest standards for children's privacy protection.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-eye-slash"></i>
+          <h3>No Hidden Collection</h3>
+          <p>We never share data with third parties or collect information without your explicit knowledge.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-bell"></i>
+          <h3>Regular Updates</h3>
+          <p>Any policy changes are communicated directly to parents in clear, easy-to-understand language.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Safety -->
+  <section class="benefits">
+    <div class="container">
+      <h2>Complete Safety</h2>
+      <p>Safety isn't negotiable, which is why Eddie protects your child in every way that matters. You get
+        comprehensive protection without compromise. Eddie keeps your child's data private while adapting to their
+        interests.</p>
+      <div class="benefit-cards">
+        <div class="card">
+          <i class="fas fa-user-shield"></i>
+          <h3>Privacy by Design</h3>
+          <p>All processing and storage happens locally on your device, with one‑click deletion and full transparency
+            into what data is stored and why.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-lock"></i>
+          <h3>Child Privacy Standards</h3>
+          <p>Designed to meet the highest child privacy certifications, including COPPA and GDPR‑K compliance, ensuring
+            your child's information stays protected.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-battery-full"></i>
+          <h3>Child‑Safe Battery</h3>
+          <p>Secure, tamper‑resistant battery compartment keeps curious hands safe while ensuring reliable power for
+            extended play.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-certificate"></i>
+          <h3>Safety Certifications</h3>
+          <p>Meets rigorous international toy safety standards, including kidSAFE® Seal Program, tested for materials,
+            construction, and age‑appropriate design.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="pioneer-program" class="cta">
     <div class="container">
-      <!-- Updated call‑to‑action to align with the Pioneer Program -->
-      <h2>Ready to welcome Eddie home?</h2>
-      <p>Join our pioneer program and be among the first families to experience how Eddie weaves wonder into your
-        daily routines.</p>
+      <h2>Ready to Choose Privacy-First Technology?</h2>
+      <p>Join our pioneer program and be among the first families to experience how Eddie puts your child's safety and
+        privacy first, without compromising on wonder and discovery.</p>
       <a href="https://tinyurl.com/omoomiPioneer" class="btn btn-cream" target="_blank">Join Pioneer Program</a>
     </div>
   </section>
