@@ -46,67 +46,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <style>
-    .blog-section {
-      padding: 3rem 0;
-    }
-
-    .blog-section h2 {
-      font-family: 'Poppins', sans-serif;
-      margin-bottom: 1rem;
-    }
-
-    .posts-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .post-card {
-      background: white;
-      border-radius: 0.5rem;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .post-card img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .post-card a img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    .post-card h3 {
-      margin: 1rem;
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.1rem;
-    }
-
-    .post-card p {
-      margin: 0 1rem 1rem;
-      font-size: 0.9rem;
-      flex-grow: 1;
-    }
-
-    .post-card a {
-      display: inline-block;
-      margin: 0 1rem 1rem;
-      color: var(--primary);
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .post-card a:hover {
-      text-decoration: underline;
-    }
-  </style>
 </head>
 
 <body>
@@ -127,7 +66,7 @@
     </div>
   </header>
 
-  <section class="hero" style="background-color: var(--neutral);">
+  <section class="hero section" style="background-color: var(--neutral);">
     <div class="container hero-inner">
       <div class="hero-content">
         <!-- Updated hero heading and description for learning focus -->
@@ -138,12 +77,12 @@
     </div>
   </section>
 
-  <section class="blog-section" style="background-color: var(--secondary);">
+  <section class="blog-section">
     <div class="container">
-      <h2>Latest Articles</h2>
+      <h2 class="text-center">Latest Articles</h2>
       <div class="posts-grid">
         <!-- New Post: AI Rewiring Brain -->
-        <div class="post-card">
+        <article class="post-card">
           <a href="posts/ai-rewiring-brain.html">
             <img
               src="images/ai_rewiring_brain.jpg"
@@ -152,9 +91,9 @@
           <h3>Is AI Rewiring Your Child's Brain?</h3>
           <p>AI is fundamentally reshaping childhood. Learn about the 5 key risks of AI companions and how omoomi offers a safer, more connected alternative for your family.</p>
           <a href="posts/ai-rewiring-brain.html">Read more →</a>
-        </div>
+        </article>
         <!-- AI Toy Safety -->
-        <div class="post-card">
+        <article class="post-card">
           <a href="posts/ai-toy-safety.html">
             <img
               src="images/teddy_with_knives.jpg"
@@ -164,9 +103,9 @@
           <p>Recent investigations reveal disturbing content in AI-powered toys. Learn about the hidden dangers and how to
             protect your family from inappropriate AI responses.</p>
           <a href="posts/ai-toy-safety.html">Read more →</a>
-        </div>
+        </article>
         <!-- Post 2 -->
-        <div class="post-card">
+        <article class="post-card">
           <a href="posts/ai-enabler.html">
             <img
               src="https://images.pexels.com/photos/3662831/pexels-photo-3662831.jpeg?auto=compress&cs=tinysrgb&w=400"
@@ -176,9 +115,9 @@
           <p>Learn how a rainy Saturday and a curious child sparked the idea for an AI Bond Weaver that strengthens
             family connections.</p>
           <a href="posts/ai-enabler.html">Read more →</a>
-        </div>
+        </article>
         <!-- Post 3 -->
-        <div class="post-card">
+        <article class="post-card">
           <a href="posts/screen-free.html">
             <img
               src="https://images.pexels.com/photos/4245928/pexels-photo-4245928.jpeg?auto=compress&cs=tinysrgb&w=400"
@@ -188,9 +127,9 @@
           <p>Need inspiration? Try these fun, educational activities that keep kids engaged and curious without screens.
           </p>
           <a href="posts/screen-free.html">Read more →</a>
-        </div>
+        </article>
         <!-- Post 4 -->
-        <div class="post-card">
+        <article class="post-card">
           <a href="posts/development-milestones.html">
             <img
               src="https://images.pexels.com/photos/5212704/pexels-photo-5212704.jpeg?auto=compress&cs=tinysrgb&w=400"
@@ -200,7 +139,7 @@
           <p>Explore evidence‑based milestones across language, motor, cognitive and social‑emotional development and
             discover how Eddie supports each stage.</p>
           <a href="posts/development-milestones.html">Read more →</a>
-        </div>
+        </article>
       </div>
     </div>
   </section>

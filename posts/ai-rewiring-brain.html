@@ -45,133 +45,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <style>
-    /* Article Base Styles */
-    .article {
-      padding: 3rem 0;
-      line-height: 1.7;
-    }
-
-    .article h2 {
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    .article h3 {
-      margin-top: 1.5rem;
-      margin-bottom: 0.5rem;
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.2rem;
-      color: var(--accent);
-    }
-
-    .article p {
-      margin: 1rem 0;
-    }
-
-    .article a {
-      color: var(--primary);
-      text-decoration: underline;
-    }
-
-    .article a:hover {
-      text-decoration: none;
-    }
-
-    /* Reasons Grid Styles */
-    .reasons-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-      margin: 2rem 0;
-    }
-
-    .reason-card:last-child {
-      grid-column: 2 / span 1;
-    }
-
-    .reason-card {
-      background-color: white;
-      padding: 1.5rem;
-      border-radius: 0.5rem;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-      text-align: center;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .reason-card i {
-      font-size: 2rem;
-      color: var(--primary);
-      margin-bottom: 0.5rem;
-    }
-
-    .reason-card h3 {
-      margin-top: 0;
-      margin-bottom: 0.5rem;
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.1rem;
-    }
-
-    .reason-card p {
-      margin: 0;
-      font-size: 0.95rem;
-      line-height: 1.5;
-      flex-grow: 1;
-    }
-
-    /* Article Image */
-    .article-image {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    .article-image img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 0.5rem;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Feature Points */
-    .feature-point {
-      margin-bottom: 1.5rem;
-    }
-
-    .feature-point h3 {
-      margin-bottom: 0.5rem;
-      font-size: 1.2rem;
-      color: var(--accent);
-    }
-
-    .feature-point p {
-      margin-left: 2rem;
-      padding-left: 1rem;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 1024px) {
-      .reasons-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .reason-card:last-child {
-        grid-column: 1 / span 1;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .reasons-grid {
-        grid-template-columns: 1fr;
-        max-width: 500px;
-        margin: 2rem auto;
-      }
-      .reason-card:last-child {
-        grid-column: 1 / span 1;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -194,7 +67,7 @@
   </header>
 
   <!-- Hero -->
-  <section class="hero" style="background-color: var(--neutral);">
+  <section class="hero section" style="background-color: var(--neutral);">
     <div class="container hero-inner">
       <div class="hero-content">
         <h1>Is AI Rewiring Your Child's Brain? Here's What You Need to Know</h1>
@@ -205,9 +78,9 @@
   </section>
 
   <!-- Article content -->
-  <section class="article" style="background-color: var(--secondary);">
+  <section class="article">
     <div class="container">
-      <div class="article-image">
+      <div class="article-image-center">
         <img
           src="../images/ai_rewiring_brain.jpg"
           alt="Child interacting with technology representing AI's impact on brain development" loading="lazy" decoding="async">
