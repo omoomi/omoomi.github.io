@@ -57,13 +57,66 @@ class MobileNavigation {
   }
 
   /**
+   * Detect current page to determine active navigation item
+   * @returns {string} Current page filename
+   */
+  getCurrentPage() {
+    const pathname = window.location.pathname;
+
+    // Remove trailing slash and get filename
+    const cleanPath = pathname.replace(/\/$/, '');
+
+    // Extract filename from path
+    if (cleanPath.includes('/posts/')) {
+      const filename = cleanPath.split('/').pop();
+      return filename || 'index.html';
+    } else {
+      const filename = cleanPath.split('/').pop();
+      return filename || 'index.html';
+    }
+  }
+
+  /**
+   * Check if navigation item is the current page
+   * @param {Object} item - Navigation item object
+   * @param {string} currentPage - Current page filename
+   * @returns {boolean} Whether this is the current page
+   */
+  isCurrentPage(item, currentPage) {
+    // Handle index.html specially (both '/' and '/index.html' should match)
+    if (currentPage === 'index.html' || currentPage === '' || currentPage === '/') {
+      return item.href === 'index.html';
+    }
+
+    // Direct match for other pages
+    if (item.href === currentPage) {
+      return true;
+    }
+
+    // Handle case where URL might have .html extension but nav item doesn't
+    if (currentPage.endsWith('.html') && item.href === currentPage.replace('.html', '')) {
+      return true;
+    }
+
+    // Handle case where nav item might have .html but current page doesn't
+    if (item.href.endsWith('.html') && currentPage === item.href) {
+      return true;
+    }
+
+    return false;
+  }
+
+  /**
    * Generate mobile navigation overlay HTML
    * @returns {string} HTML string for mobile navigation overlay
    */
   generateMobileMenu() {
-    const navItems = this.navigationItems.map(item =>
-      `<li><a href="${this.pathPrefix}${item.href}" class="mobile-nav-link">${item.text}</a></li>`
-    ).join('');
+    const currentPage = this.getCurrentPage();
+
+    const navItems = this.navigationItems.map(item => {
+      const isActiveClass = this.isCurrentPage(item, currentPage) ? ' active' : '';
+      return `<li><a href="${this.pathPrefix}${item.href}" class="mobile-nav-link${isActiveClass}">${item.text}</a></li>`;
+    }).join('');
 
     const socialItems = this.socialLinks.map(link =>
       `<a href="${link.href}" class="mobile-social-link" aria-label="${link.label}" target="_blank" rel="noopener noreferrer">
