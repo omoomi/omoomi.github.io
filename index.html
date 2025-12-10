@@ -85,20 +85,43 @@
   <!-- Blog Post Highlight Section -->
   <section class="blog-highlight" style="background-color: var(--neutral); padding: 2rem 0; border-top: 1px solid var(--secondary);">
     <div class="container">
-      <div class="blog-highlight-content" style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
-        <div class="blog-highlight-image" style="flex: 1 1 35%; text-align: center; order: 1;">
-          <img src="images/teddy_with_knives.jpg" alt="AI teddy bear with inappropriate items warning" loading="lazy" decoding="async"
-            style="max-width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+      <h2 style="text-align: center; margin-bottom: 2rem; font-family: 'Poppins', sans-serif;">Latest Articles</h2>
+      <div class="blog-highlight-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+
+        <!-- First Blog Post -->
+        <div class="blog-post-card" style="background: white; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+          <div style="height: 200px; overflow: hidden;">
+            <img src="images/teddy_with_knives.jpg" alt="AI teddy bear with inappropriate items warning" loading="lazy" decoding="async"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="padding: 1.5rem;">
+            <h3 style="margin: 0 0 0.5rem 0; font-family: 'Poppins', sans-serif; font-size: 1.2rem; color: var(--accent);">
+              ⚠️ When AI Toys Go Wrong
+            </h3>
+            <p style="margin: 0 0 1rem 0; line-height: 1.6; font-size: 0.95rem;">
+              Recent investigations reveal alarming content in AI-powered toys. Learn about the hidden dangers and how to protect your family.
+            </p>
+            <a href="posts/ai-toy-safety.html" class="btn btn-secondary" style="display: inline-block; color: black;">Read the Full Report</a>
+          </div>
         </div>
-        <div class="blog-highlight-text" style="flex: 1 1 60%; order: 2; text-align: right;">
-          <h3 style="margin: 0 0 0.5rem 0; font-family: 'Poppins', sans-serif; font-size: 1.3rem;">
-            ⚠️ New: AI Toy Safety Alert
-          </h3>
-          <p style="margin: 0 0 1rem 0; line-height: 1.6;">
-            Alarming investigations reveal AI toys teaching dangerous content.
-          </p>
-          <a href="posts/ai-toy-safety.html" class="btn btn-secondary" style="display: inline-block; color: black;">Read the Full Report</a>
+
+        <!-- Second Blog Post -->
+        <div class="blog-post-card" style="background: white; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+          <div style="height: 200px; overflow: hidden;">
+            <img src="images/ai_rewiring_brain.jpg" alt="Child interacting with technology representing AI's impact on brain development" loading="lazy" decoding="async"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="padding: 1.5rem;">
+            <h3 style="margin: 0 0 0.5rem 0; font-family: 'Poppins', sans-serif; font-size: 1.2rem; color: var(--accent);">
+              🧠 Is AI Rewiring Your Child's Brain?
+            </h3>
+            <p style="margin: 0 0 1rem 0; line-height: 1.6; font-size: 0.95rem;">
+              AI is fundamentally reshaping childhood. Learn about the 5 key risks of AI companions and how omoomi offers a safer alternative.
+            </p>
+            <a href="posts/ai-rewiring-brain.html" class="btn btn-secondary" style="display: inline-block; color: black;">Read More</a>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
