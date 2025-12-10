@@ -317,7 +317,7 @@ body > section:nth-of-type(2n+1) {
 }
 
 .benefit-cards .card {
-  background-color: white;
+  background-color: #FFFAF5;
   padding: var(--spacing-md);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
@@ -419,7 +419,7 @@ body > section:nth-of-type(2n+1) {
 }
 
 .blog-post-card {
-  background: white;
+  background: #FFFAF5;
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
@@ -484,7 +484,7 @@ body > section:nth-of-type(2n+1) {
 }
 
 .post-card {
-  background: white;
+  background: #FFFAF5;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   overflow: hidden;
@@ -660,7 +660,7 @@ body > section:nth-of-type(2n+1) {
 }
 
 .reason-card {
-  background-color: white;
+  background-color: #FFFAF5;
   padding: var(--spacing-md);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
