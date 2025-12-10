@@ -8,6 +8,10 @@
   --accent: #333333;
   --support: #E78A54;
 
+  /* Alternating section backgrounds */
+  --section-bg-1: var(--neutral);   /* Light gray */
+  --section-bg-2: var(--secondary); /* Light cream */
+
   /* Spacing */
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
@@ -121,8 +125,8 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  width: 120px;
-  height: 40px;
+  width: 160px;
+  height: 53px;
   text-decoration: none;
   transition: transform var(--transition-fast);
 }
@@ -230,9 +234,28 @@ nav a.active::after {
 /* =================================
    Section Components
    ================================= */
+
+/* Alternating section backgrounds */
+body > section:nth-of-type(2n) {
+  background-color: var(--section-bg-2);
+}
+
+body > section:nth-of-type(2n+1) {
+  background-color: var(--section-bg-1);
+}
+
+/* Override specific sections that need their own backgrounds */
+.hero {
+  background-color: var(--neutral) !important;
+}
+
+.cta {
+  background-color: var(--primary) !important;
+}
+
+
 .hero {
   padding: var(--spacing-xxl) 0;
-  background-color: var(--secondary);
 }
 
 .hero-inner {
@@ -265,7 +288,6 @@ nav a.active::after {
 }
 
 .benefits {
-  background-color: var(--neutral);
   padding: var(--spacing-xl) 0;
 }
 
@@ -367,7 +389,6 @@ nav a.active::after {
    Blog Section
    ================================= */
 .blog-highlight {
-  background-color: var(--neutral);
   padding: var(--spacing-lg) 0;
   border-top: 1px solid var(--secondary);
 }
@@ -818,17 +839,177 @@ footer {
   }
 
   .logo {
-    width: 100px;
-    height: 33px;
+    width: 140px;
+    height: 47px;
   }
 
   .nav ul li {
     margin-left: var(--spacing-xs);
   }
 
-  .mobile-menu-toggle {
+  /* Hide desktop navigation on mobile */
+  .desktop-nav {
     display: none;
-    /* Hidden for now, can be implemented later */
+  }
+
+  /* Mobile menu toggle button */
+  .mobile-menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--spacing-sm);
+    min-width: 48px;
+    min-height: 48px;
+    border-radius: var(--radius-sm);
+    transition: background-color var(--transition-fast);
+    z-index: 1001;
+  }
+
+  .mobile-menu-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .mobile-menu-toggle:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+
+  /* Hamburger menu lines */
+  .mobile-menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: var(--accent);
+    margin: 2px 0;
+    transition: all var(--transition-fast);
+    border-radius: 2px;
+  }
+
+  /* Mobile navigation overlay */
+  .mobile-nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-base), visibility var(--transition-base);
+  }
+
+  .mobile-nav-overlay:not([hidden]) {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Mobile navigation menu */
+  .mobile-nav-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--secondary);
+    padding: var(--spacing-lg) 0;
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-100%);
+    transition: transform var(--transition-base);
+  }
+
+  .mobile-nav-overlay:not([hidden]) .mobile-nav-menu {
+    transform: translateY(0);
+  }
+
+  /* Mobile navigation list */
+  .mobile-nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0 var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+
+  /* Mobile navigation links */
+  .mobile-nav-link {
+    display: block;
+    padding: var(--spacing-md) var(--spacing-lg);
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: var(--radius-sm);
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+    min-height: 48px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-nav-link:hover,
+  .mobile-nav-link:focus {
+    background-color: var(--primary);
+    color: var(--accent);
+  }
+
+  .mobile-nav-link:focus {
+    outline: 2px solid var(--support);
+    outline-offset: 2px;
+  }
+
+  /* Mobile social links */
+  .mobile-social-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg) var(--spacing-md) var(--spacing-md);
+    border-top: 1px solid var(--neutral);
+    margin-top: var(--spacing-md);
+  }
+
+  .mobile-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    color: var(--accent);
+    text-decoration: none;
+    border-radius: var(--radius-full);
+    transition: all var(--transition-fast);
+    font-size: 1.2rem;
+  }
+
+  .mobile-social-link:hover,
+  .mobile-social-link:focus {
+    background-color: var(--primary);
+    color: var(--accent);
+    transform: translateY(-2px);
+  }
+
+  .mobile-social-link:focus {
+    outline: 2px solid var(--support);
+    outline-offset: 2px;
+  }
+
+  .mobile-social-link.linkedin:hover {
+    background-color: #0077B5;
+    color: white;
+  }
+
+  .mobile-social-link.instagram:hover {
+    background-color: #E4405F;
+    color: white;
+  }
+
+  .mobile-social-link.x-twitter:hover {
+    background-color: #000000;
+    color: white;
   }
 
   .hero-inner {
@@ -865,6 +1046,22 @@ footer {
   .blog-highlight-grid {
     grid-template-columns: 1fr;
     gap: var(--spacing-md);
+  }
+}
+
+/* =================================
+   Desktop Navigation Rules ( > 768px )
+   ================================= */
+@media (min-width: 769px) {
+  /* Hide mobile navigation elements on desktop */
+  .mobile-menu-toggle,
+  .mobile-nav-overlay {
+    display: none !important;
+  }
+
+  /* Ensure desktop navigation is visible */
+  .desktop-nav {
+    display: flex !important;
   }
 }
 
