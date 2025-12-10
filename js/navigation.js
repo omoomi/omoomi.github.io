@@ -68,10 +68,21 @@ class MobileNavigation {
 
     // Extract filename from path
     if (cleanPath.includes('/posts/')) {
-      const filename = cleanPath.split('/').pop();
+      const pathParts = cleanPath.split('/');
+      const filename = pathParts[pathParts.length - 1];
       return filename || 'index.html';
     } else {
-      const filename = cleanPath.split('/').pop();
+      // Handle root level pages
+      if (cleanPath === '' || cleanPath === '/') {
+        return 'index.html';
+      }
+      const pathParts = cleanPath.split('/');
+      const filename = pathParts[pathParts.length - 1];
+
+      // If no extension, try adding .html
+      if (filename && !filename.includes('.')) {
+        return filename + '.html';
+      }
       return filename || 'index.html';
     }
   }
@@ -83,23 +94,26 @@ class MobileNavigation {
    * @returns {boolean} Whether this is the current page
    */
   isCurrentPage(item, currentPage) {
-    // Handle index.html specially (both '/' and '/index.html' should match)
+    // Handle index.html specially
     if (currentPage === 'index.html' || currentPage === '' || currentPage === '/') {
       return item.href === 'index.html';
     }
 
-    // Direct match for other pages
-    if (item.href === currentPage) {
+    // Ensure both item.href and currentPage have .html extension for comparison
+    const itemHref = item.href.endsWith('.html') ? item.href : item.href + '.html';
+    const currentPageHref = currentPage.endsWith('.html') ? currentPage : currentPage + '.html';
+
+    // Direct match
+    if (itemHref === currentPageHref) {
       return true;
     }
 
-    // Handle case where URL might have .html extension but nav item doesn't
-    if (currentPage.endsWith('.html') && item.href === currentPage.replace('.html', '')) {
-      return true;
-    }
+    // Remove .html for comparison
+    const itemBase = item.href.replace('.html', '');
+    const currentPageBase = currentPage.replace('.html', '');
 
-    // Handle case where nav item might have .html but current page doesn't
-    if (item.href.endsWith('.html') && currentPage === item.href) {
+    // Match without extension
+    if (itemBase === currentPageBase && itemBase !== '') {
       return true;
     }
 
@@ -114,7 +128,8 @@ class MobileNavigation {
     const currentPage = this.getCurrentPage();
 
     const navItems = this.navigationItems.map(item => {
-      const isActiveClass = this.isCurrentPage(item, currentPage) ? ' active' : '';
+      const isActive = this.isCurrentPage(item, currentPage);
+      const isActiveClass = isActive ? ' active' : '';
       return `<li><a href="${this.pathPrefix}${item.href}" class="mobile-nav-link${isActiveClass}">${item.text}</a></li>`;
     }).join('');
 
