@@ -1,0 +1,43 @@
+# omoomi.io robots.txt
+# This file guides search engine crawlers on how to index the website
+
+User-agent: *
+Allow: /
+
+# Prioritize crawling of important pages
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://omoomi.io/sitemap.xml
+
+# Block potentially sensitive or unnecessary paths (if any)
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /*.pdf$
+
+# Allow specific file types
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.webp$
+
+# Common search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
