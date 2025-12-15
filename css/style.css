@@ -15,6 +15,7 @@
   /* Spacing */
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
+  --spacing-nav: 0.425rem;  /* Custom spacing for navigation height */
   --spacing-md: 1.5rem;
   --spacing-lg: 2rem;
   --spacing-xl: 3rem;
@@ -119,14 +120,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--spacing-sm) 0;
+  padding: var(--spacing-nav) 0;
 }
 
 .logo {
   display: flex;
   align-items: center;
   width: 160px;
-  height: 53px;
+  height: 44px;
   text-decoration: none;
   transition: transform var(--transition-fast);
 }
@@ -854,7 +855,7 @@ footer {
 
   .logo {
     width: 140px;
-    height: 47px;
+    height: 38px;
   }
 
   .nav ul li {
