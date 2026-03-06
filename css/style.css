@@ -203,6 +203,17 @@ nav a:focus {
   box-shadow: var(--shadow-md);
 }
 
+.btn-inverse {
+  background-color: var(--accent);
+  color: var(--primary);
+}
+
+.btn-inverse:hover {
+  background-color: var(--primary);
+  color: var(--accent);
+  box-shadow: var(--shadow-md);
+}
+
 .hero {
   padding: calc(var(--spacing-xxl) + 60px) 0 var(--spacing-xxl);
   background-color: var(--neutral) !important;
@@ -795,6 +806,24 @@ nav a:focus {
 
 .waitlist-note i {
   margin-right: 0.25rem;
+}
+
+.survey-cta {
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid rgba(51, 51, 51, 0.2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--spacing-md);
+}
+
+.survey-cta p {
+  margin: 0;
+  color: #444;
+  flex: 1 1 250px;
+  text-align: left;
 }
 
 footer {
