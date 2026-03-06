@@ -29,7 +29,3 @@ python -m http.server 8000
 ## Deployment
 
 Automatically deployed via GitHub Pages when pushed to main branch.
-
-## Contact
-
-contact@omoomi.io
