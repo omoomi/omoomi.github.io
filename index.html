@@ -21,8 +21,8 @@
   <meta property="og:title" content="Guardian Hub by omoomi - AI Co-Pilot for Elders">
   <meta property="og:description" content="An empathetic AI companion that helps seniors age with dignity, independence, and joy through proactive emotional support and intelligent assistance.">
   <meta property="og:image" content="https://omoomi.io/images/hero.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
   <meta property="og:site_name" content="omoomi">
   <meta property="og:locale" content="en_US">
   
@@ -42,10 +42,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <script src="https://getlaunchlist.com/js/widget-diy.js" defer></script>
   
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta http-equiv="X-Frame-Options" content="DENY">
-  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
-  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   
   <script type="application/ld+json">
   {
@@ -113,6 +110,7 @@
     </div>
   </header>
 
+  <main>
   <section class="hero" id="hero">
     <div class="hero-bg-animation"></div>
     <div class="container hero-inner">
@@ -353,7 +351,6 @@
         <blockquote>
           We are building a world where aging is not a crisis to be managed, but a journey to be embraced with the help of an intelligent, compassionate companion.
         </blockquote>
-        <cite>— Ben, CEO</cite>
       </div>
     </div>
   </section>
@@ -363,9 +360,10 @@
       <div class="waitlist-content animate-on-scroll">
         <h2>Be Among the First</h2>
         <p>Join our waitlist to get early access to Guardian Hub and help shape the future of senior care.</p>
-        <form class="waitlist-form launchlist-form" action="https://getlaunchlist.com/s/2SMFy1" method="POST">
-          <input type="email" name="email" placeholder="Enter your email" required aria-label="Email address">
+        <form class="waitlist-form launchlist-form" action="https://getlaunchlist.com/s/2SMFy1" method="POST" novalidate>
+          <input type="email" name="email" placeholder="Enter your email" required autocomplete="email" aria-label="Email address" aria-describedby="waitlist-email-error" aria-invalid="false">
           <button type="submit" class="btn btn-primary btn-large">Join Waitlist</button>
+          <p class="form-error" id="waitlist-email-error" role="alert" aria-live="polite"></p>
         </form>
         <p class="waitlist-note"><i class="fas fa-lock"></i> We respect your privacy. No spam, ever.</p>
         <div class="survey-cta">
@@ -375,6 +373,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <footer>
     <div class="container footer-inner">
