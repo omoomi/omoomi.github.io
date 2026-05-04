@@ -464,6 +464,13 @@ input:focus-visible {
   align-items: center;
 }
 
+.mobile-app-screenshot {
+  width: min(100%, 280px);
+  height: auto;
+  border-radius: 32px;
+  box-shadow: var(--shadow-xl);
+}
+
 .phone-mockup {
   width: 260px;
   height: 520px;
@@ -585,71 +592,6 @@ input:focus-visible {
   left: 0;
   color: var(--primary);
   font-weight: bold;
-}
-
-.tech-diagram {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--spacing-lg);
-  padding: var(--spacing-xl) 0;
-}
-
-.tech-inputs,
-.tech-outputs {
-  display: flex;
-  gap: var(--spacing-lg);
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.tech-input,
-.tech-output {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--spacing-xs);
-  padding: var(--spacing-sm) var(--spacing-md);
-  background: var(--secondary);
-  border-radius: var(--radius-md);
-  min-width: 100px;
-}
-
-.tech-input i,
-.tech-output i {
-  font-size: 1.5rem;
-  color: var(--primary);
-}
-
-.tech-input span,
-.tech-output span {
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-.tech-engine {
-  position: relative;
-}
-
-.engine-core {
-  background-color: var(--primary);
-  color: var(--accent);
-  padding: var(--spacing-md) var(--spacing-xl);
-  border-radius: var(--radius-xl);
-  text-align: center;
-  box-shadow: var(--shadow-lg);
-  max-width: 100%;
-}
-
-.engine-core span {
-  display: block;
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-
-.engine-core small {
-  font-size: 0.85rem;
-  opacity: 0.9;
 }
 
 .team-grid {

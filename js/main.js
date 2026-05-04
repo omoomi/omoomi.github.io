@@ -145,55 +145,6 @@
     });
   }
 
-  var techInputs = document.querySelectorAll('.tech-input');
-  var techOutputs = document.querySelectorAll('.tech-output');
-  var engineCore = document.querySelector('.engine-core');
-
-  if (techInputs.length && techOutputs.length && engineCore && !reduceMotion && 'IntersectionObserver' in window) {
-    var techObserver = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          techInputs.forEach(function(input, i) {
-            setTimeout(function() {
-              input.style.transform = 'scale(1.1)';
-              input.style.transition = 'transform 0.3s ease';
-              setTimeout(function() {
-                input.style.transform = 'scale(1)';
-              }, 300);
-            }, i * 200);
-          });
-
-          setTimeout(function() {
-            engineCore.style.transform = 'scale(1.05)';
-            engineCore.style.transition = 'transform 0.3s ease';
-            setTimeout(function() {
-              engineCore.style.transform = 'scale(1)';
-            }, 300);
-          }, techInputs.length * 200);
-
-          setTimeout(function() {
-            techOutputs.forEach(function(output, i) {
-              setTimeout(function() {
-                output.style.transform = 'scale(1.1)';
-                output.style.transition = 'transform 0.3s ease';
-                setTimeout(function() {
-                  output.style.transform = 'scale(1)';
-                }, 300);
-              }, i * 200);
-            });
-          }, (techInputs.length + 1) * 200 + 300);
-
-          techObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.5 });
-
-    var techDiagram = document.querySelector('.tech-diagram');
-    if (techDiagram) {
-      techObserver.observe(techDiagram);
-    }
-  }
-
   if (reduceMotion) {
     var style = document.createElement('style');
     style.textContent = `
