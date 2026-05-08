@@ -700,6 +700,51 @@ input:focus-visible {
   font-weight: 500;
 }
 
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--spacing-lg);
+  align-items: stretch;
+}
+
+.partner-logo {
+  min-height: 170px;
+  padding: var(--spacing-lg);
+  background: var(--secondary);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.partner-logo:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.partner-logo img {
+  width: 100%;
+  max-width: 300px;
+  max-height: 110px;
+  object-fit: contain;
+  display: block;
+}
+
+.partner-logo-nycu img {
+  max-height: 145px;
+}
+
+.partner-logo-inception img {
+  max-height: 130px;
+}
+
+.partner-logo-angel img {
+  max-width: 245px;
+  max-height: 96px;
+}
+
 .waitlist {
   background-color: var(--primary);
   color: var(--accent);
@@ -1090,6 +1135,16 @@ footer {
   .mission-content blockquote {
     font-size: 1.1rem;
     padding: 0 var(--spacing-sm);
+  }
+
+  .partners-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .partner-logo {
+    min-height: 130px;
+    padding: var(--spacing-md);
   }
 
   .footer-inner {
