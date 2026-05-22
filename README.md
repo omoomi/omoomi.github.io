@@ -1,31 +1,37 @@
-# Guardian Hub - omoomi
+# omoomi website
 
-AI Co-Pilot for Elders - An empathetic AI companion that helps seniors age with dignity, independence, and joy.
+Static GitHub Pages site for omoomi. The current site is a refreshed multi-page launch site with extensionless public routes.
 
 ## Site Structure
 
-- `index.html` - Main single-page website
-- `404.html` - Error page
-- `privacy-notice.html` - Privacy policy
-- `css/style.css` - Styles
-- `js/main.js` - Scroll animations and interactions
-- `images/` - Static assets
+- `index.html` - Home page
+- `about/index.html` - About page served at `/about/`
+- `start/index.html` - Early-access page served at `/start/`
+- `404.html` - Not found page
+- `_drafts/legal/privacy.html` - Draft legal document, not published by GitHub Pages
+- `_drafts/legal/terms.html` - Draft legal document, not published by GitHub Pages
+- `_config.yml` - GitHub Pages/Jekyll exclude rules for unpublished drafts
+- `assets/css/styles.css` - Shared styles and design tokens
+- `assets/js/nav.js` - Mobile navigation behavior
+- `assets/images/` - Current static assets
 
-## Features
+## Current State
 
-- Responsive design (mobile & desktop)
-- Scroll-triggered animations
-- Waitlist email capture (Formspree)
-- SEO optimized with meta tags and JSON-LD
+- Public messaging uses "Launching soon" for conversion CTAs.
+- Existing "Live" feature labels are preserved.
+- Public URLs are extensionless: `/`, `/about/`, and `/start/`.
+- Draft legal pages are excluded from the public footer, sitemap, and published site.
 
 ## Development
 
-To preview locally, open `index.html` in a browser or use a local server:
+Preview locally with a static server:
 
 ```bash
-python -m http.server 8000
+python3 -m http.server 8000
 ```
+
+Then open `http://localhost:8000/`.
 
 ## Deployment
 
-Automatically deployed via GitHub Pages when pushed to main branch.
+Automatically deployed via GitHub Pages when pushed to the main branch.

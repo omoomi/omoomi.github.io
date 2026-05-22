@@ -1,367 +1,459 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DTDPJ23DG7"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-DTDPJ23DG7');
-  </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guardian Hub by omoomi - AI Co-Pilot for Elders</title>
-  
-  <meta name="description" content="Guardian Hub is an empathetic AI companion that helps seniors age with dignity, independence, and joy through proactive emotional support, health monitoring, and intelligent assistance.">
-  <meta name="author" content="omoomi">
-  <meta name="robots" content="index, follow">
-  
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://omoomi.io/">
-  <meta property="og:title" content="Guardian Hub by omoomi - AI Co-Pilot for Elders">
-  <meta property="og:description" content="An empathetic AI companion that helps seniors age with dignity, independence, and joy through proactive emotional support and intelligent assistance.">
-  <meta property="og:image" content="https://omoomi.io/images/hero.jpg">
-  <meta property="og:image:width" content="1024">
-  <meta property="og:image:height" content="1024">
-  <meta property="og:site_name" content="omoomi">
-  <meta property="og:locale" content="en_US">
-  
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://omoomi.io/">
-  <meta property="twitter:title" content="Guardian Hub by omoomi - AI Co-Pilot for Elders">
-  <meta property="twitter:description" content="An empathetic AI companion that helps seniors age with dignity, independence, and joy through proactive emotional support and intelligent assistance.">
-  <meta property="twitter:image" content="https://omoomi.io/images/hero.jpg">
-  <meta name="twitter:site" content="@omoomiAI">
-  <meta name="twitter:creator" content="@omoomiAI">
-  
-  <link rel="canonical" href="https://omoomi.io/">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <script src="https://getlaunchlist.com/js/widget-diy.js" defer></script>
-  
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "omoomi",
-    "url": "https://omoomi.io",
-    "description": "AI-native longevity platforms that empower seniors to age with dignity",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://omoomi.io/?s={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "omoomi",
-    "url": "https://omoomi.io",
-    "logo": "https://omoomi.io/images/omoomi_logo.png",
-    "description": "Building AI-native longevity platforms that empower seniors to age with dignity",
-    "sameAs": [
-      "https://www.linkedin.com/company/omoomi",
-      "https://www.instagram.com/omoomi.ai",
-      "https://x.com/omoomiAI"
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Guardian Hub",
-    "applicationCategory": "HealthApplication",
-    "operatingSystem": "iOS, Android, Web",
-    "description": "AI co-pilot for elders to age in peace with proactive emotional support, health monitoring, and intelligent assistance",
-    "brand": {
-      "@type": "Brand",
-      "name": "omoomi"
-    },
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InDevelopment"
-    }
-  }
-  </script>
+<meta charset="utf-8" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DTDPJ23DG7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-DTDPJ23DG7');
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>omoomi · Stay close, even from a distance</title>
+<meta name="description" content="omoomi keeps your loved one company, remembers their stories, and tells you how their day went. Free early access." />
+<link rel="canonical" href="https://omoomi.io/" />
+<meta property="og:title" content="omoomi · Stay close, even from a distance" />
+<meta property="og:description" content="omoomi keeps your loved one company, remembers their stories, and tells you how their day went. Free early access." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://omoomi.io/" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,400..700,0..100,0..1&family=Inter:wght@400;500;600;700&display=swap" />
+<link rel="icon" href="/assets/images/brand/logo-mark.png" />
+<link rel="stylesheet" href="/assets/css/styles.css" />
+<script src="/assets/js/nav.js" defer></script>
 </head>
-
 <body>
-  <header class="header-sticky">
-    <div class="container nav">
-      <a href="#" class="logo">
-        <img src="images/omoomi_logo.png" alt="omoomi Logo" decoding="async">
-      </a>
-      <nav class="desktop-nav">
-        <ul>
-          <li><a href="#waitlist" class="btn btn-primary">Join Waitlist</a></li>
-          <li><a href="https://tinyurl.com/omoomiGH" class="btn btn-inverse" target="_blank" rel="noopener noreferrer">Take Survey</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-  <section class="hero" id="hero">
-    <div class="hero-bg-animation"></div>
-    <div class="container hero-inner">
-      <div class="hero-content animate-on-scroll">
-        <h1>AI Co-Pilot for Elders</h1>
-        <p class="hero-tagline">Guardian Hub is an empathetic AI companion that helps seniors age with dignity, independence, and joy.</p>
-        <div class="hero-ctas">
-          <a href="#waitlist" class="btn btn-primary btn-large">Join Waitlist</a>
-          <a href="https://tinyurl.com/omoomiGH" class="btn btn-inverse btn-large" target="_blank" rel="noopener noreferrer">Take Survey</a>
-        </div>
-      </div>
-      <div class="hero-image animate-on-scroll animate-delay-1">
-        <img src="images/hero.jpg" alt="Guardian Hub - AI companion for seniors" loading="eager" decoding="async" width="500" height="500">
-      </div>
-    </div>
-    <div class="hero-scroll-indicator">
-      <i class="fas fa-chevron-down"></i>
-    </div>
-  </section>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="/" aria-label="omoomi home">
+      <img class="brand-logo" src="/assets/images/brand/logo-name-horizontal-black.png" alt="omoomi" />
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/#features">Product</a>
+      <a href="/start/">Free Early Access</a>
+      <a href="/about/">About</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+<div id="nav-drawer" class="nav-drawer" role="dialog" aria-label="Menu" aria-modal="true" aria-hidden="true">
+  <button class="nav-drawer-close" aria-label="Close menu">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <a href="/#features">Product</a>
+  <a href="/start/">Free Early Access</a>
+  <a href="/about/">About</a>
+</div>
 
-  <section class="solution section" id="solution">
-    <div class="container">
-      <div class="section-header animate-on-scroll">
-        <h2>Three Pillars of Care</h2>
-        <p>Guardian Hub redefines senior care through proactive support, autonomous execution, and intelligent safety.</p>
+<main>
+<!-- 1.1 Hero -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="caption hero-eyebrow">Free during early access · Taiwan</span>
+      <h1 class="h-display">Know how Mom's doing.<br />Every single day.</h1>
+      <p class="body-lg lead">omoomi keeps your loved one company every day, and tells you how they're doing.</p>
+      <span class="btn btn-primary btn-lg btn-disabled hero-cta" aria-disabled="true">Launching soon</span>
+      <p class="hero-microcopy">Free during early access. No credit card required.</p>
+    </div>
+    <div class="hero-art">
+      <img class="app-screenshot" src="/assets/images/product/app-voice-home.svg" alt="omoomi mobile app voice screen" />
+    </div>
+  </div>
+</section>
+
+<!-- 1.2 Product Introduction -->
+<section class="section panel-sage">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="h2">Three people<br />One simple thing each</h2>
+      <p class="body-lg">The family asks a question. A care helper shares an update. Your loved one hears a familiar voice.</p>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <span class="card-label">For you</span>
+        <h3>Know how your loved one's day went</h3>
+        <p>omoomi tells you what your loved one said today, how they slept, and what made them smile.</p>
       </div>
-      <div class="pillars-grid">
-        <div class="pillar-card animate-on-scroll">
-          <div class="pillar-icon">
-            <i class="fas fa-heart"></i>
-          </div>
-          <h3>Proactive Emotional Support</h3>
-          <p>An empathetic AI companion that proactively initiates context-aware conversations to combat isolation.</p>
-          <ul class="pillar-features">
-            <li><i class="fas fa-check"></i> Daily Check-ins</li>
-            <li><i class="fas fa-check"></i> Emotion Detection & Support</li>
-            <li><i class="fas fa-check"></i> Life-Story Archiving</li>
-          </ul>
+      <div class="card">
+        <span class="card-label">For your loved one</span>
+        <h3>A companion who remembers</h3>
+        <p>omoomi chats with your loved one, collects their stories, and plays your messages to them.</p>
+      </div>
+      <div class="card">
+        <div class="card-label-group">
+          <span class="card-label">For care helpers</span>
+          <span class="card-label-status">Coming Soon</span>
         </div>
-        <div class="pillar-card animate-on-scroll animate-delay-1">
-          <div class="pillar-icon">
-            <i class="fas fa-heartbeat"></i>
-          </div>
-          <h3>Contextual Health Monitoring</h3>
-          <p>Tracks medication adherence, detects anomalies, and alerts caregivers instantly.</p>
-          <ul class="pillar-features">
-            <li><i class="fas fa-check"></i> Invisible Guardian</li>
-            <li><i class="fas fa-check"></i> No Cameras/Wearables</li>
-          </ul>
-        </div>
-        <div class="pillar-card animate-on-scroll animate-delay-2">
-          <div class="pillar-icon">
-            <i class="fas fa-concierge-bell"></i>
-          </div>
-          <h3>Agentic Concierge</h3>
-          <p>An autonomous "Chief Household Officer" that executes complex administrative tasks.</p>
-          <ul class="pillar-features">
-            <li><i class="fas fa-check"></i> Insurance Navigation</li>
-            <li><i class="fas fa-check"></i> Appointment Scheduling</li>
-            <li><i class="fas fa-check"></i> Logistics Execution</li>
-          </ul>
-        </div>
+        <h3>One sentence keeps everyone aligned</h3>
+        <p>A helper shares one update. The family sees what happened, without another long call.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="features section section-alt" id="features">
-    <div class="container">
-      <div class="section-header animate-on-scroll">
-        <h2>Intelligent, Empathetic, Always There</h2>
-        <p>Meet your Guardian - an AI companion that understands, supports, and cares.</p>
+<!-- 1.3 Features -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="h2">What can omoomi do for you?</h2>
+      <p>The first three are live in early access. The rest are on the way.</p>
+    </div>
+
+    <!-- 01 AI Companion (Live) -->
+    <div class="feature-row feature-row-no-border">
+      <div class="feature-art feature-art-sage">
+        <span class="feature-num">01 · Live</span>
+        <div class="fa fa-center fa-chat">
+          <div class="fa-bubble omoomi">Tell me about your morning.</div>
+          <div class="fa-bubble you">I had tea with the neighbor again.</div>
+          <div class="fa-bubble omoomi">That sounds lovely. The jasmine one?</div>
+          <div class="fa-bubble you">…I don't remember. Maybe.</div>
+          <div class="fa-bubble omoomi">That's alright. The company was the nice part.</div>
+        </div>
       </div>
-      <div class="features-grid">
-        <div class="feature-card animate-on-scroll">
-          <div class="feature-icon">
-            <i class="fas fa-brain"></i>
-          </div>
-          <h3>Context Aware</h3>
-          <p>Understands health history, daily routines, mood, and family preferences to provide personalized care that feels natural and human.</p>
+      <div>
+        <div class="feature-title">
+          <h3>AI Companion</h3>
         </div>
-        <div class="feature-card animate-on-scroll animate-delay-1">
-          <div class="feature-icon">
-            <i class="fas fa-hand-holding-heart"></i>
-          </div>
-          <h3>Proactive Support</h3>
-          <p>Doesn't wait for commands. Reminds about meds, appointments, and hydration proactively, turning reactive alerts into caring guidance.</p>
-        </div>
-        <div class="feature-card animate-on-scroll animate-delay-2">
-          <div class="feature-icon">
-            <i class="fas fa-comments"></i>
-          </div>
-          <h3>Natural Conversation</h3>
-          <p>Interacts via voice or text just like a family member, reducing loneliness and eliminating tech friction for all users.</p>
-        </div>
+        <p>Designed for senior caregiving conversations. omoomi understands hesitation, repetition, and emotional subtext.<br /><br />When your loved one trails off mid-sentence or repeats a story from yesterday, omoomi listens the same way a patient friend would. They feel heard, not corrected.</p>
       </div>
     </div>
-  </section>
 
-  <section class="products section" id="products">
-    <div class="container">
-      <div class="section-header animate-on-scroll">
-        <h2>Products</h2>
-        <p>Companion technology that bridges digital and physical care.</p>
-      </div>
-      <div class="products-wrapper">
-        <div class="product-card animate-on-scroll">
-          <div class="product-image">
-            <img class="mobile-app-screenshot" src="images/screenshot-frontend-v0.1.png" alt="Guardian Hub mobile app dashboard screenshot" loading="lazy" decoding="async" width="673" height="1136">
-          </div>
-          <div class="product-content">
-            <h3>Mobile App</h3>
-            <p>Your Guardian in your pocket - intelligent, empathetic, always there. The mobile app provides:</p>
-            <ul>
-              <li>Daily wellness check-ins</li>
-              <li>Medication reminders</li>
-              <li>Reminiscence therapy sessions</li>
-              <li>Family connection updates</li>
-            </ul>
-          </div>
+    <!-- 02 Gentle Reminders (Live) -->
+    <div class="feature-row reverse">
+      <div class="feature-art feature-art-mist">
+        <span class="feature-num">02 · Live</span>
+        <div class="fa fa-center fa-chat">
+          <div class="fa-bubble omoomi">A little water might feel nice now.</div>
+          <div class="fa-bubble you">Not right now.</div>
+          <div class="fa-bubble omoomi">Of course. I'll check in after your show.</div>
+          <div class="fa-bubble omoomi">Half a glass when you're ready — Dr. Lin asked for two more today.</div>
         </div>
-        <div class="product-card product-card-alt animate-on-scroll animate-delay-1">
-          <div class="product-image">
-            <div class="device-mockup">
-              <img src="images/edge-device.png" alt="Edge AI Device - The Companion" style="max-width: 280px; height: auto;">
-              <div class="device-pulse-overlay">
-                <i class="fas fa-heart"></i>
-              </div>
+      </div>
+      <div>
+        <div class="feature-title">
+          <h3>Gentle Reminders</h3>
+        </div>
+        <p>omoomi reminds like a person, not an alarm. If your loved one says "not now," omoomi circles back later with a softer nudge.<br /><br />Works for everyday routines like hydration, movement, appointments, and medication reminders, but not emergencies or medical decisions.</p>
+      </div>
+    </div>
+
+    <!-- 03 Life Stories (Live) -->
+    <div class="feature-row">
+      <div class="feature-art feature-art-rose">
+        <span class="feature-num">03 · Live</span>
+        <div class="fa fa-center">
+          <div class="fa-card">
+            <span class="fa-eyebrow">Story · March 1964</span>
+            <div class="fa-title">The noodle shop on Yongkang Street.</div>
+            <div class="fa-quote">"He always ordered extra coriander. I thought that was strange. Then I tried it."</div>
+            <div class="fa-tag-row">
+              <span class="fa-tag">Saved to journal</span>
+              <span class="fa-tag">34 collected</span>
             </div>
           </div>
-          <div class="product-content">
-            <h3>Edge AI Device</h3>
-            <p>The Companion - a screenless, voice-based, privacy-safe physical device that brings AI from phone to home.</p>
-            <ul>
-              <li>Screenless, voice-first design</li>
-              <li>Complete privacy - works offline</li>
-              <li>Haptic "Life Signals" pulse</li>
-              <li>Connects peripheral devices</li>
-            </ul>
+        </div>
+      </div>
+      <div>
+        <div class="feature-title">
+          <h3>Life Stories</h3>
+        </div>
+        <p>Her memories, collected through conversation, saved forever.</p>
+      </div>
+    </div>
+
+    <!-- 04 Daily Digest (Coming soon) -->
+    <div class="feature-row reverse">
+      <div class="feature-art feature-art-sage">
+        <span class="feature-num">04</span>
+        <div class="fa fa-center">
+          <div class="fa-card">
+            <span class="fa-eyebrow">Tonight's digest</span>
+            <div class="fa-title">A quiet, good day.</div>
+            <div class="fa-tag-row">
+              <span class="fa-tag">Warm mood</span>
+              <span class="fa-tag">7h 20m sleep</span>
+              <span class="fa-tag">3 topics</span>
+            </div>
+            <div class="fa-quote">"She asked when you're coming Tuesday."</div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="team section section-alt" id="team">
-    <div class="container">
-      <div class="section-header animate-on-scroll">
-        <h2>Our Team</h2>
-        <p>A world-class team with deep expertise in healthcare and AI, backed by 30+ expert advisors.</p>
+      <div>
+        <div class="feature-title">
+          <h3>Daily Digest</h3>
+          <span class="tag-soon">Coming soon</span>
+        </div>
+        <p>Every evening, your loved one's day in their own words.</p>
       </div>
-      <div class="team-grid">
-        <div class="team-card animate-on-scroll">
-          <div class="team-photo">
-            <img src="images/team-ben.jpg" alt="Ben - CEO" loading="lazy" decoding="async">
+    </div>
+
+    <!-- 05 Ask omoomi (Coming soon) -->
+    <div class="feature-row">
+      <div class="feature-art feature-art-mist">
+        <span class="feature-num">05</span>
+        <div class="fa fa-center fa-chat">
+          <div class="fa-bubble you">Did my parent seem settled today?</div>
+          <div class="fa-bubble omoomi">Yes — the afternoon was calm after lunch.</div>
+          <div class="fa-bubble you">What made her smile?</div>
+          <div class="fa-bubble omoomi">She talked about an old neighbor and started humming.</div>
+        </div>
+      </div>
+      <div>
+        <div class="feature-title">
+          <h3>Ask omoomi</h3>
+          <span class="tag-soon">Coming soon</span>
+        </div>
+        <p>Ask about care context, routines, and recent moments.</p>
+      </div>
+    </div>
+
+    <!-- 06 Post-Visit Message (Coming soon) -->
+    <div class="feature-row reverse">
+      <div class="feature-art feature-art-mist">
+        <span class="feature-num">06</span>
+        <div class="fa fa-center">
+          <div class="fa-card">
+            <span class="fa-eyebrow">After your visit · 5:14 PM</span>
+            <div class="fa-title">She said today was a good one.</div>
+            <div class="fa-muted-copy">She mentioned the tea you brought twice after you left. Mood has been warm since.</div>
+            <span class="fa-tag">Sent to family</span>
           </div>
-          <div class="team-info">
-            <h3>Ben</h3>
-            <span class="team-role">CEO</span>
-            <p>15 years software engineering. YC alum, ex-Microsoft, Databricks, NASA. Leads AI and hardware strategy.</p>
+        </div>
+      </div>
+      <div>
+        <div class="feature-title">
+          <h3>Post-Visit Message</h3>
+          <span class="tag-soon">Coming soon</span>
+        </div>
+        <p>A warm note after every visit.</p>
+      </div>
+    </div>
+
+    <!-- 07 Care Handbook (Coming soon) -->
+    <div class="feature-row">
+      <div class="feature-art feature-art-amber">
+        <span class="feature-num">07</span>
+        <div class="fa fa-center">
+          <div class="fa-card fa-card-tight">
+            <span class="fa-eyebrow">Care Handbook</span>
+            <div class="fa-title">Everything in one place.</div>
+            <div class="fa-row">Medications &amp; schedule</div>
+            <div class="fa-row">Doctor contacts</div>
+            <div class="fa-row">Preferences &amp; routines</div>
+            <div class="fa-row">Life history</div>
+            <span class="fa-tag">Export as PDF</span>
           </div>
         </div>
-        <div class="team-card animate-on-scroll animate-delay-1">
-          <div class="team-photo">
-            <img src="images/team-evy.jpg" alt="Evy - COO" loading="lazy" decoding="async">
+      </div>
+      <div>
+        <div class="feature-title">
+          <h3>Care Handbook</h3>
+          <span class="tag-soon">Coming soon</span>
+        </div>
+        <p>Everything about your loved one in one place. Exportable as PDF.</p>
+      </div>
+    </div>
+
+    <!-- 08 Family Dashboard (Coming soon) -->
+    <div class="feature-row reverse">
+      <div class="feature-art feature-art-rose">
+        <span class="feature-num">08</span>
+        <div class="fa fa-center fa-padded">
+          <div class="fa-circle-graph fa-circle-wide">
+            <div class="fa-node">You</div>
+            <div class="fa-node">Sister</div>
+            <div class="fa-node">Brother</div>
+            <div class="fa-node muted">Doctor</div>
+            <div class="fa-node center">Loved one</div>
+            <div class="fa-node muted">Caregiver</div>
+            <div class="fa-node muted">Niece</div>
+            <div class="fa-node muted">Nurse</div>
+            <div class="fa-node">In-law</div>
           </div>
-          <div class="team-info">
-            <h3>Evy</h3>
-            <span class="team-role">COO</span>
-            <p>Healthcare consultant & impact VC investor. Access to 30+ expert advisors. Leads operations and finance.</p>
+        </div>
+      </div>
+      <div>
+        <div class="feature-title">
+          <h3>Family Dashboard</h3>
+          <span class="tag-soon">Coming soon</span>
+        </div>
+        <p>The whole family, one calm view.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 1.4 Value -->
+<section class="section panel-sage">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="h2">What families coordinate today</h2>
+      <p>Families piece together companionship, reminders, and stories. omoomi helps bring those moments into one calm daily flow.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-head">
+        <div>What families coordinate</div>
+        <div>What families do today</div>
+        <div>How omoomi helps</div>
+      </div>
+      <div class="value-row">
+        <div>
+          Arrange frequent check-ins
+        </div>
+        <div>Text, call, or wait for the next visit</div>
+        <div>omoomi adds gentle companionship between visits</div>
+      </div>
+      <div class="value-row">
+        <div>
+          Repeat everyday reminders
+        </div>
+        <div>Set alarms, leave notes, and repeat the same ask</div>
+        <div>omoomi gives patient nudges for everyday routines</div>
+      </div>
+      <div class="value-row">
+        <div>
+          Save family stories before they fade
+        </div>
+        <div>Try to record memories when everyone has time</div>
+        <div>Life stories are collected naturally through conversation</div>
+      </div>
+    </div>
+    <div class="value-footer">
+      <p>omoomi is free during early access. No credit card required.</p>
+      <span class="btn btn-primary btn-lg btn-disabled" aria-disabled="true">Launching soon</span>
+    </div>
+  </div>
+</section>
+
+<!-- 1.5 Trust -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="h2">Built for trust</h2>
+      <p>omoomi supports sensitive family care moments, so consent, privacy, and safety are part of the product promise.</p>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <span class="card-label">AI transparency</span>
+        <h3>Always disclosed as AI</h3>
+        <p>Your loved one should know they are speaking with software, not a person.</p>
+      </div>
+      <div class="card">
+        <span class="card-label">Privacy</span>
+        <h3>Family context stays protected</h3>
+        <p>We do not sell elder-care data or use personal conversations for behavioral advertising.</p>
+      </div>
+      <div class="card">
+        <span class="card-label">Safety</span>
+        <h3>Not for emergencies</h3>
+        <p>omoomi is for companionship and everyday support, not medical advice or emergency response.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 1.8 Product Roadmap -->
+<section class="section rm2-section" id="roadmap">
+  <div class="container">
+    <div class="section-head roadmap-head">
+      <h2 class="h2">What comes next</h2>
+      <p>The app today. A screenless device tomorrow.</p>
+    </div>
+
+    <div class="rm2-grid">
+      <!-- Phase 1 -->
+      <article class="rm2-card rm2-card-amber">
+        <div class="rm2-card-bar amber"></div>
+        <div class="rm2-card-body">
+          <span class="rm2-eyebrow amber">Launching soon</span>
+          <h3 class="rm2-h3">Phase 1: App</h3>
+          <div class="rm2-visual" aria-hidden="true">
+            <img class="rm2-app-image" src="/assets/images/product/app-voice-home.svg" alt="" />
           </div>
+          <ul class="rm2-list">
+            <li><span class="rm2-bullet amber" aria-hidden="true"></span>AI companionship</li>
+            <li><span class="rm2-bullet amber" aria-hidden="true"></span>Everyday routine reminders</li>
+            <li><span class="rm2-bullet amber" aria-hidden="true"></span>Life story collection</li>
+          </ul>
         </div>
-      </div>
+      </article>
+
+      <!-- Phase 2 -->
+      <article class="rm2-card rm2-card-rose">
+        <div class="rm2-card-bar rose"></div>
+        <div class="rm2-card-body">
+          <span class="rm2-eyebrow rose">2027</span>
+          <h3 class="rm2-h3">Phase 2: Device</h3>
+          <div class="rm2-visual" aria-hidden="true">
+            <img class="phase-device-image" src="/assets/images/product/phase-2-device.png" alt="omoomi Phase 2 device" />
+          </div>
+          <ul class="rm2-list">
+            <li><span class="rm2-bullet rose" aria-hidden="true"></span>Screenless edge AI device</li>
+            <li><span class="rm2-bullet rose" aria-hidden="true"></span>Tactile feedback</li>
+            <li><span class="rm2-bullet rose" aria-hidden="true"></span>Family caregiver dashboard</li>
+          </ul>
+        </div>
+      </article>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="mission section" id="mission">
-    <div class="container">
-      <div class="mission-content animate-on-scroll">
-        <blockquote>
-          We are building a world where aging is not a crisis to be managed, but a journey to be embraced with the help of an intelligent, compassionate companion.
-        </blockquote>
-      </div>
-    </div>
-  </section>
+<!-- 1.7 Final CTA -->
+<section class="section final-cta">
+  <div class="container">
+    <h2>Stay close,<br />even from a distance</h2>
+    <span class="btn btn-primary btn-lg btn-disabled" aria-disabled="true">Launching soon</span>
+    <p class="microcopy">Launching soon as a web app. Free during early access. No credit card required.</p>
+  </div>
+</section>
+</main>
 
-  <section class="partners section section-alt" id="partners">
-    <div class="container">
-      <div class="section-header animate-on-scroll">
-        <h2>Partners</h2>
-      </div>
-      <div class="partners-grid">
-        <div class="partner-logo partner-logo-nycu animate-on-scroll">
-          <img src="images/nycu.png" alt="National Yang Ming Chiao Tung University logo" loading="lazy" decoding="async" width="1200" height="848">
-        </div>
-        <div class="partner-logo partner-logo-inception animate-on-scroll animate-delay-1">
-          <img src="images/nvidia-inception.png" alt="NVIDIA Inception logo" loading="lazy" decoding="async" width="1221" height="662">
-        </div>
-        <div class="partner-logo partner-logo-angel animate-on-scroll animate-delay-2">
-          <img src="images/angel-central.png" alt="Angel Central logo" loading="lazy" decoding="async" width="1797" height="732">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="waitlist section" id="waitlist">
-    <div class="container">
-      <div class="waitlist-content animate-on-scroll">
-        <h2>Be Among the First</h2>
-        <p>Join our waitlist to get early access to Guardian Hub and help shape the future of senior care.</p>
-        <form class="waitlist-form launchlist-form" action="https://getlaunchlist.com/s/2SMFy1" method="POST" novalidate>
-          <input type="email" name="email" placeholder="Enter your email" required autocomplete="email" aria-label="Email address" aria-describedby="waitlist-email-error" aria-invalid="false">
-          <button type="submit" class="btn btn-primary btn-large">Join Waitlist</button>
-          <p class="form-error" id="waitlist-email-error" role="alert" aria-live="polite"></p>
-        </form>
-        <p class="waitlist-note"><i class="fas fa-lock"></i> We respect your privacy. No spam, ever.</p>
-        <div class="survey-cta">
-          <p>Take our 15-minute survey, and co-create Guardian Hub with us.</p>
-          <a href="https://tinyurl.com/omoomiGH" class="btn btn-inverse btn-large" target="_blank" rel="noopener noreferrer">Take Survey</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  </main>
-
-  <footer>
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a href="#" class="logo">
-          <img src="images/omoomi_logo.png" alt="omoomi Logo" decoding="async">
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="/" aria-label="omoomi home">
+          <img class="brand-logo brand-on-dark footer-logo" src="/assets/images/brand/logo-name-horizontal-black.png" alt="omoomi" />
         </a>
-        <p>&copy; 2026 omoomi Inc. All rights reserved.</p>
-        <p class="footer-tagline">Guardian Hub - AI Co-Pilot for Elders</p>
+        <p class="footer-tagline">Sense - Understand - Act</p>
       </div>
-      <div class="footer-social">
-        <a href="https://www.linkedin.com/company/omoomi" class="linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://www.instagram.com/omoomi.ai" class="instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://x.com/omoomiAI" class="x" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
-          <i class="fa-brands fa-x"></i>
-        </a>
+      <div>
+        <h5>Product</h5>
+        <ul>
+          <li><a href="/start/">Free Early Access</a></li>
+          <li><a href="/#features">Features</a></li>
+        </ul>
       </div>
-      <div class="footer-links">
-        <a href="privacy-notice.html">Privacy Notice</a>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:support@omoomi.io">support@omoomi.io</a></li>
+        </ul>
       </div>
     </div>
-  </footer>
+    <div class="footer-bottom">
+      <span>© 2026 omoomi Inc. All rights reserved.</span>
+      <span>Free during early access · Taiwan</span>
+    </div>
+  </div>
+</footer>
 
-  <script src="js/main.js" defer></script>
 </body>
 </html>

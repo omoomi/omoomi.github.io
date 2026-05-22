@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="860" viewBox="0 0 500 860" role="img" aria-labelledby="title desc">
+  <title id="title">omoomi mobile app voice screen in a wide phone frame</title>
+  <desc id="desc">A wide framed mobile phone showing the omoomi voice app screen with logo, settings button, an amber microphone button, ready status, and conversation button.</desc>
+  <defs>
+    <filter id="phoneShadow" x="-18%" y="-10%" width="136%" height="124%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#22313F" flood-opacity="0.24"/>
+    </filter>
+    <filter id="softShadow" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#22313F" flood-opacity="0.12"/>
+    </filter>
+    <filter id="buttonShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#22313F" flood-opacity="0.14"/>
+    </filter>
+    <radialGradient id="micGlow" cx="50%" cy="45%" r="60%">
+      <stop offset="0" stop-color="#F8C979"/>
+      <stop offset="0.55" stop-color="#F2B35A"/>
+      <stop offset="1" stop-color="#E89A3F"/>
+    </radialGradient>
+    <clipPath id="screenClip">
+      <rect x="42" y="44" width="416" height="772" rx="38"/>
+    </clipPath>
+  </defs>
+
+  <rect width="500" height="860" fill="none"/>
+
+  <g>
+    <rect x="24" y="8" width="452" height="844" rx="58" fill="#22313F"/>
+    <rect x="34" y="18" width="432" height="824" rx="50" fill="#111C27" opacity="0.52"/>
+    <rect x="42" y="44" width="416" height="772" rx="38" fill="#FBF6EF"/>
+  </g>
+
+  <rect x="16" y="170" width="8" height="68" rx="4" fill="#1B2A38" opacity="0.84"/>
+  <rect x="476" y="216" width="8" height="96" rx="4" fill="#1B2A38" opacity="0.84"/>
+  <rect x="206" y="32" width="88" height="10" rx="5" fill="#0C1219" opacity="0.82"/>
+  <circle cx="312" cy="37" r="5" fill="#0C1219" opacity="0.82"/>
+
+  <g clip-path="url(#screenClip)">
+    <rect x="42" y="44" width="416" height="772" fill="#FBF6EF"/>
+
+    <g transform="translate(74 82) scale(0.74)" aria-hidden="true">
+      <path d="M17 4H8C5.8 4 4 5.8 4 8v34c0 2.2 1.8 4 4 4h9" fill="none" stroke="#AAB0B4" stroke-width="7" stroke-linecap="round"/>
+      <path d="M35 4h9c2.2 0 4 1.8 4 4v34c0 2.2-1.8 4-4 4h-9" fill="none" stroke="#F2B35A" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="26" cy="25" r="7" fill="#22313F"/>
+    </g>
+
+    <g transform="translate(380 78) scale(0.74)" filter="url(#buttonShadow)" aria-hidden="true">
+      <rect width="59" height="59" rx="11" fill="#FFFDF8" stroke="#E4DDD4"/>
+      <g transform="translate(17 17)" fill="none" stroke="#22313F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12.5 2.5v3"/>
+        <path d="M12.5 19.5v3"/>
+        <path d="M4.2 6.8l2.1 2.1"/>
+        <path d="M18.7 17.2l2.1 2.1"/>
+        <path d="M2.5 12.5h3"/>
+        <path d="M19.5 12.5h3"/>
+        <path d="M4.2 18.2l2.1-2.1"/>
+        <path d="M18.7 7.8l2.1-2.1"/>
+        <circle cx="12.5" cy="12.5" r="4.2"/>
+      </g>
+    </g>
+
+    <circle cx="250" cy="392" r="156" fill="#FFFDF8" stroke="#E9E1D8" filter="url(#softShadow)"/>
+    <circle cx="250" cy="392" r="116" fill="#F2B35A" opacity="0.10"/>
+    <circle cx="250" cy="392" r="88" fill="#F2B35A" opacity="0.16"/>
+    <circle cx="250" cy="392" r="62" fill="url(#micGlow)" filter="url(#buttonShadow)"/>
+
+    <g aria-hidden="true" fill="#FFFDF8">
+      <rect x="218" y="386" width="9" height="25" rx="4.5" opacity="0.9"/>
+      <rect x="237" y="372" width="9" height="53" rx="4.5" opacity="0.98"/>
+      <rect x="254" y="362" width="9" height="73" rx="4.5"/>
+      <rect x="273" y="376" width="9" height="45" rx="4.5" opacity="0.95"/>
+      <rect x="293" y="390" width="9" height="18" rx="4.5" opacity="0.9"/>
+      <rect x="199" y="392" width="9" height="16" rx="4.5" opacity="0.72"/>
+    </g>
+
+    <g transform="translate(166 760)" filter="url(#buttonShadow)">
+      <rect width="168" height="56" x="0" y="-56" rx="28" fill="#FFFDF8" stroke="#E4DDD4"/>
+      <text x="84" y="-22" text-anchor="middle" font-family="Inter, -apple-system, BlinkMacSystemFont, system-ui, sans-serif" font-size="17" font-weight="600" fill="#22313F">Conversation</text>
+    </g>
+  </g>
+
+  <rect x="42" y="44" width="416" height="772" rx="38" fill="none" stroke="#F8F1E9" stroke-opacity="0.75"/>
+</svg>

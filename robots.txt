@@ -8,5 +8,7 @@ Sitemap: https://omoomi.io/sitemap.xml
 Allow: /*.css$
 Allow: /*.js$
 Allow: /*.jpg$
+Allow: /*.jpeg$
 Allow: /*.png$
+Allow: /*.svg$
 Allow: /*.webp$
