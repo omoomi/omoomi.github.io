@@ -1,6 +1,6 @@
 # omoomi website
 
-Static GitHub Pages site for omoomi. The current site is a refreshed multi-page launch site with extensionless public routes.
+Static site for omoomi. The current site is a refreshed multi-page launch site with extensionless public routes.
 
 ## Site Structure
 
@@ -15,12 +15,6 @@ Static GitHub Pages site for omoomi. The current site is a refreshed multi-page 
 - `assets/js/nav.js` - Mobile navigation behavior
 - `assets/images/` - Current static assets
 
-## Current State
-
-- Public messaging uses "Launching soon" for conversion CTAs.
-- Existing "Live" feature labels are preserved.
-- Public URLs are extensionless: `/`, `/about/`, and `/start/`.
-- Draft legal pages are excluded from the public footer, sitemap, and published site.
 
 ## Development
 
@@ -31,7 +25,3 @@ python3 -m http.server 8000
 ```
 
 Then open `http://localhost:8000/`.
-
-## Deployment
-
-Automatically deployed via GitHub Pages when pushed to the main branch.
