@@ -105,7 +105,7 @@ h1, h2, h3, h4 { margin: 0; font-family: var(--font-display); color: var(--color
 .nav-links { display: flex; align-items: center; gap: 28px; font-family: var(--font-body); font-size: 14px; color: var(--color-text-muted); }
 .nav-links a { transition: color var(--transition-base); }
 .nav-links a:hover { color: var(--color-text); }
-.lang-link { font-weight: 600; color: var(--color-brand) !important; }
+.lang-link { font-weight: 600; color: inherit; }
 .footer-lang { margin-top: 14px; display: inline-flex; font-weight: 600; color: rgba(251,246,239,0.86) !important; }
 .nav-toggle { display: none; }
 .nav-drawer { display: none; }
@@ -294,9 +294,14 @@ h1, h2, h3, h4 { margin: 0; font-family: var(--font-display); color: var(--color
 .fq.coming { background: transparent; }
 .fq-icon { font-size: 28px; margin-bottom: 12px; }
 .fq h4 { font: 600 var(--text-md)/1.3 var(--font-body); margin: 0 0 6px; }
+.fq-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 0 0 6px; }
+.fq-head h4 { margin: 0; }
+.fq-status { flex: 0 0 auto; display: inline-flex; align-items: center; font: 600 11px/1 var(--font-body); color: var(--color-text-muted); background: var(--color-border); padding: 6px 9px; border-radius: 999px; }
+.fq-status-live { color: var(--color-brand); background: rgba(122,145,117,0.12); }
 .fq p { font-size: var(--text-base); color: var(--color-text-muted); margin: 0; line-height: 1.55; }
 .fq.coming p::after { content: 'Coming soon'; display: block; margin-top: 4px; color: var(--color-text-muted); font-style: italic; }
 html[lang="zh-TW"] .fq.coming p::after { content: '即將推出'; }
+.feature-quick-status .fq.coming p::after { content: none; display: none; }
 
 /* About */
 .about-hero { text-align: center; padding-block: clamp(96px, 14vw, 160px); }
