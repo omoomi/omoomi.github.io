@@ -105,7 +105,7 @@ h1, h2, h3, h4 { margin: 0; font-family: var(--font-display); color: var(--color
 .nav-links { display: flex; align-items: center; gap: 28px; font-family: var(--font-body); font-size: 14px; color: var(--color-text-muted); }
 .nav-links a { transition: color var(--transition-base); }
 .nav-links a:hover { color: var(--color-text); }
-.lang-link { font-weight: 600; color: var(--color-brand) !important; }
+.lang-link { font-weight: 600; color: inherit; }
 .footer-lang { margin-top: 14px; display: inline-flex; font-weight: 600; color: rgba(251,246,239,0.86) !important; }
 .nav-toggle { display: none; }
 .nav-drawer { display: none; }
