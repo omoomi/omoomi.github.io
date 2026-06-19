@@ -341,11 +341,16 @@ html[lang="zh-TW"] .fq.coming p::after { content: '即將推出'; }
 .partner img { display: block; width: 200px; height: 80px; object-fit: contain; object-position: center; }
 .partner img.partner-logo-large { width: 250px; height: 96px; }
 .partner img.partner-logo-small { width: 136px; height: 54px; }
+.partner-with-label { flex-direction: column; gap: 3px; }
+.partner-with-label img { width: 56px; height: 56px; }
+.partner-label { display: block; font-size: 11px; line-height: 1.2; color: var(--color-text-muted); letter-spacing: 0; }
 @media (max-width: 640px) {
   .partner { width: 180px; height: 72px; }
   .partner img { width: 160px; height: 64px; }
   .partner img.partner-logo-large { width: 180px; height: 72px; }
   .partner img.partner-logo-small { width: 108px; height: 43px; }
+  .partner-with-label img { width: 42px; height: 42px; }
+  .partner-label { font-size: 10px; }
 }
 
 /* Roadmap v2 — two-card side-by-side */
