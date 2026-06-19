@@ -331,11 +331,11 @@ html[lang="zh-TW"] .fq.coming p::after { content: '即將推出'; }
 .team-role { font-size: var(--text-xs); color: var(--color-brand); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; }
 .team-bio { color: var(--color-text-muted); font-size: var(--text-base); line-height: 1.65; margin: 0; }
 .advisor-note { margin: 40px auto 0; max-width: 640px; text-align: center; font: 400 var(--text-base)/1.6 var(--font-body); color: var(--color-text-muted); }
-.partner-strip { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 36px 48px; margin-top: 56px; }
+.partner-strip { display: grid; grid-template-columns: repeat(2, minmax(0, 250px)); justify-content: center; align-items: center; max-width: 548px; gap: 36px 48px; margin: 56px auto 0; }
 @media (max-width: 640px) {
-  .partner-strip { gap: 28px 24px; }
+  .partner-strip { grid-template-columns: repeat(2, minmax(0, 180px)); gap: 28px 24px; }
 }
-.partner { width: 250px; height: 96px; font: 600 var(--text-base)/1.3 var(--font-body); color: var(--color-text-muted); letter-spacing: 0.04em; opacity: 0.7; filter: grayscale(100%); transition: color var(--transition-base), opacity var(--transition-base), filter var(--transition-base); text-align: center; display: inline-flex; align-items: center; justify-content: center; }
+.partner { width: 100%; height: 96px; font: 600 var(--text-base)/1.3 var(--font-body); color: var(--color-text-muted); letter-spacing: 0.04em; opacity: 0.7; filter: grayscale(100%); transition: color var(--transition-base), opacity var(--transition-base), filter var(--transition-base); text-align: center; display: inline-flex; align-items: center; justify-content: center; }
 .partner:hover { opacity: 1; color: var(--color-brand); filter: grayscale(0%); }
 .partner:has(img) { opacity: 1; filter: none; }
 .partner img { display: block; width: 200px; height: 80px; object-fit: contain; object-position: center; }
@@ -343,14 +343,14 @@ html[lang="zh-TW"] .fq.coming p::after { content: '即將推出'; }
 .partner img.partner-logo-small { width: 136px; height: 54px; }
 .partner-with-label { flex-direction: column; gap: 3px; }
 .partner-with-label img { width: 56px; height: 56px; }
-.partner-label { display: block; font-size: 11px; line-height: 1.2; color: var(--color-text-muted); letter-spacing: 0; }
+.partner-label { display: block; font-size: 12px; line-height: 1.2; color: var(--color-text-muted); letter-spacing: 0; }
 @media (max-width: 640px) {
-  .partner { width: 180px; height: 72px; }
+  .partner { width: 100%; height: 72px; }
   .partner img { width: 160px; height: 64px; }
   .partner img.partner-logo-large { width: 180px; height: 72px; }
   .partner img.partner-logo-small { width: 108px; height: 43px; }
   .partner-with-label img { width: 42px; height: 42px; }
-  .partner-label { font-size: 10px; }
+  .partner-label { font-size: 11px; }
 }
 
 /* Roadmap v2 — two-card side-by-side */
